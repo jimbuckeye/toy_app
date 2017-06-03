@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.3.0'
 gem 'rails',        '5.0.1'
 gem 'puma',         '3.4.0'
 gem 'sass-rails',   '5.0.6'
@@ -9,6 +9,8 @@ gem 'jquery-rails', '4.1.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.4.1'
 gem 'pg',           '0.18.4'
+gem 'rails_12factor'
+
 
 group :development, :test do
   gem 'sqlite3', '1.3.12'
@@ -16,6 +18,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'sqlite3', '1.3.12'
   gem 'web-console',           '3.1.1'
   gem 'listen',                '3.0.8'
   gem 'spring',                '1.7.2'
